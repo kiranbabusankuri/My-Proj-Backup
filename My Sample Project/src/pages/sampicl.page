@@ -1,0 +1,54 @@
+<apex:page standardController="account" extensions="selectpicklist"
+     showHeader="true"
+       sidebar="true">
+<apex:form >
+<apex:pageBlock title="Page Deatails">
+<apex:pageBlockButtons location="top">
+<apex:commandButton value="save" action="{!save}"/>
+</apex:pageBlockButtons>
+<apex:pageBlockSection columns="1">
+<apex:selectList label="year of passing" value="{!yearvalue}" size="1" multiselect="false">
+<apex:actionsupport event="onchange" action="{!picklist}"/>
+<apex:actionStatus startText="Applying value"></apex:actionStatus>
+<apex:selectOptions value="{!yearlist}"/>
+</apex:selectlist>
+<!-- 2010 output panel-->
+<apex:outputpanel id="pd1" rendered="{!yearvalue1}">
+<apex:pageBlock title="2010 hiding details">
+<apex:pageBlockSection columns="1" title="2010 section">
+<apex:pageBlockSectionItem >
+<apex:outputLabel value="accountname">
+</apex:outputLabel>
+<apex:inputField value="{!account.name}"/>
+</apex:pageBlockSectionItem>
+</apex:pageBlockSection>
+</apex:pageBlock>
+</apex:outputpanel>
+<!-- 2011 output panel-->
+<apex:outputpanel id="pd2" rendered="{!yearvalue2}">
+<apex:pageBlock title="2011 hiding details">
+<apex:pageBlockSection columns="1" title="2011 section">
+<apex:pageBlockSectionItem >
+<apex:outputLabel value="AccountName">
+</apex:outputLabel>
+<apex:inputField value="{!account.name}"/>
+</apex:pageBlockSectionItem>
+</apex:pageBlockSection>
+</apex:pageBlock>
+</apex:outputpanel>
+<!-- 2012 output panel-->
+<apex:outputpanel id="pd3" rendered="{!yearvalue3}">
+<apex:pageBlock title="2012 hiding details">
+<apex:pageBlockSection columns="1" title="2012 section">
+<apex:pageBlockSectionItem >
+<apex:outputLabel value="AccountName">
+</apex:outputLabel>
+<apex:inputField value="{!account.name}"/>
+</apex:pageBlockSectionItem>
+</apex:pageBlockSection>
+</apex:pageBlock>
+</apex:outputpanel>
+</apex:pageBlockSection>
+</apex:pageBlock>
+</apex:form>
+</apex:page>
