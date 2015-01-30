@@ -13,7 +13,7 @@ public class apsk {
         if ( (uid == 'harsh') && (pwd == 'cloud') )
             status = 'Valid User';
         else
-            stat = 'Not Validate';
+            stat = 'Your Not a valid user';
             
     }
 
