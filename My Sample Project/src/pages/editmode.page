@@ -12,6 +12,12 @@
                 <apex:inputtextarea />
             </apex:pageBlockSection>
         </apex:pageblock>
+         <apex:pageBlock title="Contacts" mode="details">
+            <apex:pageBlockSection columns="1">
+                <apex:inputText /> 
+                <apex:inputtextarea />
+            </apex:pageBlockSection>
+        </apex:pageblock>
         <apex:pageBlock title="Edit" mode="edit">
             <apex:pageBlockSection columns="1">
                 <apex:inputText /> 
