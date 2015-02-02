@@ -13,6 +13,6 @@ result=number1-number2;
 if(operator.contains('*'))
 result=number1*number2;
 if(operator.contains('/'))
-result=number1*number2;
+result=number1/number2;
 }
 }
