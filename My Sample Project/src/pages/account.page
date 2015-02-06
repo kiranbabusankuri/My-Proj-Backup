@@ -1,5 +1,0 @@
-<apex:page standardController="Account" extensions="classone" >
-<apex:form >
-<apex:sectionHeader title="Account Details" subtitle="Records"/>
-</apex:form>  
-</apex:page>

@@ -1,5 +1,0 @@
-<apex:page controller="Marks">
-<apex:form >
-<apex:sectionHeader title="Student" subtitle="Total Marks"/>
-</apex:form> 
-</apex:page>

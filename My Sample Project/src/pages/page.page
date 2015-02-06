@@ -1,9 +1,0 @@
-<apex:page standardController="opportunity" tabStyle="opportunity" >
-<apex:form >
-<apex:pageBlock title="Opportunity">
-<apex:outputLabel value="Name">
-<apex:inputText value="{!opportunity.name}"/>
-</apex:outputLabel>
-</apex:pageBlock>
-</apex:form>
-</apex:page>

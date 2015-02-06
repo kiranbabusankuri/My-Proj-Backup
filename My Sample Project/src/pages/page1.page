@@ -1,7 +1,0 @@
-<apex:page >
-  <!-- Begin Default Content REMOVE THIS -->
-  <h1>Hi Krishna</h1>
-    <p id="demo"></p>
-    <button type="button" onclick="document.getElementById('demo').innerHTML = 'Welcome krishna'">Click Here</button>
-  
-</apex:page>

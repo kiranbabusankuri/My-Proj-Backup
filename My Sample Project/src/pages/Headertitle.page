@@ -1,5 +1,0 @@
-<apex:page >
-
-<apex:sectionHeader title=" customer" subtitle="New Customer" help="http://www.gmail.com" description="This is my customer page" printUrl="/apex/firstpage"/>
-  
-</apex:page>
