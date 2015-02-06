@@ -1,0 +1,25 @@
+<apex:page standardController="Marks__c">
+<apex:form >
+<apex:sectionHeader title="Student" subtitle="Total Marks"/>
+
+<apex:pageblock title="Marks Edit">
+<apex:pageBlockButtons location="top">
+<apex:commandButton value="save & new" action="{!save}"/>
+<apex:commandButton value="save" action="{!save}"/>
+<apex:commandButton value="cancel" action="{!cancel}"/>
+</apex:pageBlockButtons>
+
+
+<apex:pageBlockSection title="Information" collapsible="false">
+<apex:inputField value="{!Marks__c.name}"/>
+<apex:inputField value="{!Marks__c.English__c}"/>
+<apex:inputField value="{!Marks__c.Hindi__c}"/>
+<apex:inputField value="{!Marks__c.Telugu__c}"/>
+<apex:inputField value="{!Marks__c.Social__c}"/>
+<apex:inputField value="{!Marks__c.Science__c}"/>
+<apex:inputField value="{!Marks__c.Mathematics__c}"/>
+<apex:inputField value="{!Marks__c.Student__c}"/>
+</apex:pageBlockSection>
+</apex:pageBlock>
+</apex:form> 
+</apex:page>

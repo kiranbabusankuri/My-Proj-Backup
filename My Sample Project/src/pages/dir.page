@@ -1,0 +1,12 @@
+<apex:page >
+<apex:form >
+<apex:pageBlock title="FirstBlock">
+<apex:pageBlockButtons dir="RTL">
+<apex:commandButton value="click" action="http://www.yahoo.com"/>
+<apex:commandButton value="save" action="{!save}" disabled="false"/>
+<span style="color:Red;float:left;">Welcome to home</span>
+
+</apex:pageBlockButtons>
+</apex:pageBlock>
+</apex:form>
+</apex:page>

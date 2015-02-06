@@ -1,0 +1,9 @@
+<apex:page >
+<apex:pageblock title="Account" helptitle="Need Help" helpurl="http//www.google.com">
+Hello This is sample<br/>
+This is another sample
+</apex:pageBlock>
+
+<apex:pageblock title="Contacts" rendered="{!NOT(false)}">
+</apex:pageBlock>
+</apex:page>

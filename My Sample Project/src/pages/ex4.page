@@ -1,0 +1,13 @@
+<apex:page standardcontroller="Account" recordSetVar="items">
+<apex:pageblock >
+<apex:pageblockTable value="{!items}" var="a" first="3" rows="4">
+<apex:column value="{!a.name}"/>
+<apex:column headerValue="MyIndustry">
+{!a.Industry}
+</apex:column>
+
+</apex:pageblockTable>
+
+</apex:pageblock>
+  
+</apex:page>

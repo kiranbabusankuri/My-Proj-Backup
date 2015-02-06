@@ -1,0 +1,8 @@
+<apex:page >
+<apex:form >
+<apex:pageBlock title="Account" helpTitle="Need Help" helpUrl="http://www.google.com">
+<apex:commandButton value="click" action="http://www.google.com"/>
+<apex:commandButton value="save" action="{!save}" disabled="false"/>
+</apex:pageBlock>
+</apex:form> 
+</apex:page>
