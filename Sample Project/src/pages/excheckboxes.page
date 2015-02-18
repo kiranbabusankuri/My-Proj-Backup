@@ -1,0 +1,19 @@
+<apex:page >
+<apex:form >
+<apex:pageBlock title="States">
+<apex:selectCheckboxes >
+<apex:selectOption itemLabel="Ap" itemValue="ap"></apex:selectOption>
+<apex:selectOption itemLabel="Mp" itemValue="mp"></apex:selectOption>
+</apex:selectCheckboxes>
+<apex:selectRadio >
+<apex:selectOption itemLabel="Up" itemvalue="up"></apex:selectOption>
+<apex:selectOption itemLabel="Th" itemvalue="th"></apex:selectOption>
+</apex:selectRadio>
+<apex:selectList size="1">
+
+<apex:selectOption itemLabel="Ap" itemValue="ap"></apex:selectOption>
+<apex:selectoption itemLabel="tp" itemValue="tp"></apex:selectOption>
+</apex:selectList>
+</apex:pageBlock> 
+</apex:form>
+</apex:page>

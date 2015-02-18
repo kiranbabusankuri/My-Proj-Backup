@@ -1,0 +1,14 @@
+<apex:page standardcontroller="Opportunity">
+<apex:pageblock >
+<apex:pageBlockSection columns="3">
+                <apex:pageBlockTable value="{!opportunity}" var="opp">
+                
+                    <apex:column value="{!opp.Account}"/> 
+                     <apex:column value="{!opp.Name}"/>
+                    
+                 
+                </apex:pageBlockTable>
+            </apex:pageBlockSection>
+        </apex:pageBlock>
+        
+        </apex:page>

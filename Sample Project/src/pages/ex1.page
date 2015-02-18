@@ -1,0 +1,11 @@
+<apex:page controller="Example">
+<apex:form >
+<script>
+  function show()
+  {
+  alert("Hello");
+  }
+  </script>
+  <apex:commandButton value="Click" onclick="show()"/>
+</apex:form>
+ </apex:page>

@@ -1,0 +1,34 @@
+<apex:page standardController="Marks__c">
+<apex:form >
+<apex:sectionHeader title="Student" subtitle="Total Marks"/>
+
+<apex:pageblock title="Marks Edit">
+<script type="text/javascript"> 
+function show_alert() { 
+var msg = "Record Saved Sucessfully";
+alert(msg); 
+}
+</script>
+  
+<apex:pageBlockButtons location="top">
+
+<apex:commandButton value="Save" action="{!save}" onclick="show_alert()"/>
+
+
+</apex:pageBlockButtons>
+
+
+
+<apex:pageBlockSection title="Information" collapsible="false">
+<apex:inputField value="{!Marks__c.name}"/>
+<apex:inputField value="{!Marks__c.English__c}"/>
+<apex:inputField value="{!Marks__c.Hindi__c}"/>
+<apex:inputField value="{!Marks__c.Telugu__c}"/>
+<apex:inputField value="{!Marks__c.Social__c}"/>
+<apex:inputField value="{!Marks__c.Science__c}"/>
+<apex:inputField value="{!Marks__c.Mathematics__c}"/>
+<apex:inputField value="{!Marks__c.Student__c}"/>
+</apex:pageBlockSection>
+</apex:pageBlock>
+</apex:form> 
+</apex:page>

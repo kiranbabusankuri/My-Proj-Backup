@@ -1,0 +1,23 @@
+<apex:page >
+<apex:form >
+<apex:pageBlock title="FirstBlock">
+
+<apex:pageBlockButtons >
+<apex:commandButton value="click" action="http://www.yahoo.com"/>
+<apex:commandButton value="save" action="{!save}" disabled="false"/>
+
+</apex:pageBlockButtons>
+Hello World<br/> I am Here
+</apex:pageBlock>
+
+<apex:pageBlock title="SecondBlock">
+
+<apex:pageBlockButtons location="Top">
+<apex:commandButton value="click" action="http://www.google.com"/>
+<apex:commandButton value="save" action="{!save}" disabled="false"/>
+
+</apex:pageBlockButtons>
+Hello World<br/> I am Here
+</apex:pageBlock>
+</apex:form>
+</apex:page>

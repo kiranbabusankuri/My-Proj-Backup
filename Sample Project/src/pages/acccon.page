@@ -1,0 +1,32 @@
+<apex:page controller="pg">
+    <apex:form >
+        <apex:inputField value="{!contactRec.accountid}" >
+            <apex:actionSupport event="onchange" reRender="form" status="progress"/>
+        </apex:inputField>
+        <apex:actionStatus id="progress"  >
+            <apex:facet name="start" >
+                <img src="/img/loading.gif" alt="Loading graphic" />
+            </apex:facet>
+        </apex:actionStatus>
+    </apex:form>
+    <apex:form id="form">
+        <apex:pageBlock title="contact details" >
+            <apex:pageBlockSection columns="2">
+                <apex:pageBlockTable value="{!cont}" var="co">
+                    <apex:column value="{!co.lastname}"/>
+                    <apex:column value="{!co.phone}"/>
+                    <apex:column value="{!co.email}"/>
+                    <apex:column value="{!co.accountid}"/>
+                </apex:pageBlockTable>
+            </apex:pageBlockSection>
+        </apex:pageBlock>
+        <apex:pageBlock title="oppty details">
+            <apex:pageBlockSection >
+                <apex:pageBlockTable value="{!oppty}" var="op">
+                    <apex:column value="{!op.name}"/>
+                    <apex:column value="{!op.Amount}"/>
+                </apex:pageBlockTable>
+            </apex:pageBlockSection>
+        </apex:pageBlock>
+    </apex:form>
+</apex:page>

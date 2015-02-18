@@ -1,0 +1,6 @@
+<apex:page >
+
+{!10*20}<br/>{!10}<br/>{!'sam'}<br/>{!TODAY()}<br/>{!DATE(2014,4,5)}<br/>{!ISBLANK('')}<br/>{!IF(ISBLANK(''),'Selected','Rejected')}
+<apex:outputLabel rendered="{!ISBLANK('')}"> This is test </apex:outputLabel>
+
+</apex:page>

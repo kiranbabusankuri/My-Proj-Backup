@@ -1,0 +1,3 @@
+<apex:page >
+  <apex:pageMessage title="Sample" severity="error" strength="10" summary="Your having error" detail="Strict Warning"></apex:pageMessage>
+ </apex:page>

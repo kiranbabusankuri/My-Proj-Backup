@@ -1,0 +1,14 @@
+<apex:page standardController="Account">
+  <apex:pageBlock >
+     <b><u>Related lists for {!account.name}: </u></b>
+  </apex:pageBlock>
+  
+ 
+
+  <apex:relatedList list="Contacts">
+       <apex:facet name="header">I can change the titles with <b>facets</b></apex:facet>
+       <apex:facet name="footer"><u><b>Footer</b> can also be changed</u></apex:facet>
+  </apex:relatedList>
+  
+  <apex:relatedList list="opportunity" title="Or you can keep the image, but change the text"/>
+</apex:page>

@@ -1,0 +1,30 @@
+<apex:page controller="WorkingWithApexDataTablesControllers">
+  
+  <apex:sectionHeader title="Working With Apex Data Tables"/>
+  
+  <apex:pageMessages />
+  
+  <apex:form >
+
+    <apex:dataTable value="{!allContacts}" var="c" id="contactsTable">
+      <apex:column >
+        <apex:facet name="header">
+          <apex:inputCheckbox value="{!allChecked}">
+            <apex:actionSupport event="onclick" action="{!CheckAll}"
+                                rerender="contactsTable"/>
+          </apex:inputCheckbox>
+        </apex:facet>
+        <apex:inputCheckbox value="{!c.selected}"/>
+      </apex:column>
+      <apex:column value="{!c.con.Name}" headervalue="Full Name"/>
+      <apex:column value="{!c.con.Title}" headervalue="Title"/>
+      <apex:column value="{!c.con.Department}" 
+                   headervalue="Department"/>
+      <apex:column value="{!c.con.Email}" headervalue="Email"/>
+    </apex:dataTable>
+
+    <apex:commandButton action="{!ProcessSelectedContacts}" 
+                        value="Process Selected Contacts"/>
+
+  </apex:form>
+</apex:page>

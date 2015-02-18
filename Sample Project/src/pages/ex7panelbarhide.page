@@ -1,0 +1,7 @@
+<apex:page >
+<apex:panelBar >
+<apex:panelBarItem label="Account">Account Name</apex:panelBarItem>
+<apex:panelBarItem label="Contact">Contact Name</apex:panelBarItem>
+<apex:panelBarItem label="Opportunity">Opportunity Name</apex:panelBarItem>
+</apex:panelBar>
+</apex:page>
