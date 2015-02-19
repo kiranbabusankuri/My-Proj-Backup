@@ -1,0 +1,21 @@
+<apex:page controller="acccal1" >
+<apex:form >
+<apex:pageblock title="caluculator">
+<apex:pageBlockSection columns="1" title="simple operations" collapsible="false">
+<apex:pageBlockSectionItem >
+<apex:outputLabel >enter A value</apex:outputLabel>
+<apex:inputtext value="{!avalue}"/>
+</apex:pageBlockSectionItem>
+
+<apex:pageBlockSectionItem >
+<apex:outputLabel >enter B value</apex:outputLabel>
+<apex:inputtext value="{!bvalue}"/>
+</apex:pageBlockSectionItem>
+
+<apex:pageblockSectionItem >
+<apex:outputLabel > Result {!A+B} of {!50} and {!100} and the result is {!result}</apex:outputLabel>
+</apex:pageblockSectionItem>
+</apex:pageBlockSection>
+</apex:pageblock>
+</apex:form>
+</apex:page>

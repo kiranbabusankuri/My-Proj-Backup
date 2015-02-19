@@ -1,0 +1,45 @@
+<apex:page standardController="account" >
+<apex:form >
+<apex:tabPanel switchType="client">
+<apex:tab label="Account Information">
+<apex:pageBlock >
+<apex:pageblockSection >
+<apex:inputField value="{!account.name}"/>
+<apex:inputfield value="{!account.Accountnumber}"/>
+<apex:inputField value="{!account.rating}"/>
+<apex:inputField value="{!account.website}"/>
+<apex:inputField value="{!account.phone}"/>
+<apex:inputField value="{!account.site}"/>
+<apex:inputfield value="{!account.NumberOfEmployees}"/>
+</apex:pageblockSection>
+</apex:pageBlock>
+</apex:tab>
+
+<apex:tab label="Address Information">
+<apex:pageblock >
+<apex:pageblockSection >
+<apex:inputField value="{!account.billingstreet}"/>
+<apex:inputField value="{!account.billingcity}"/>
+<apex:inputField value="{!account.billingcountry}"/>
+</apex:pageblockSection>
+</apex:pageblock>
+</apex:tab>
+
+<apex:tab label="Additional Information">
+<apex:pageblock >
+<apex:pageBlockSection >
+<apex:inputField value="{!account.SLASerialNumber__c}"/>
+<apex:inputField value="{!account.Active__c}"/>
+<apex:inputfield value="{!account.CustomerPriority__c}"/>
+
+<apex:commandButton value="save" action="{!save}" id="button"/>
+</apex:pageBlockSection>
+</apex:pageblock>
+
+</apex:tab>
+
+
+
+</apex:tabPanel>
+</apex:form>
+</apex:page>

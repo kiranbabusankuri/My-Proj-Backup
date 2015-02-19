@@ -1,0 +1,12 @@
+<apex:page standardController="account" extensions="childrelationships">
+<apex:form >
+<apex:sectionHeader title="contacts" subtitle="contacts without child"/>
+<apex:pageBlock >
+<apex:commandButton value="Create Students"/>
+</apex:pageBlock>
+  <!-- Begin Default Content REMOVE THIS -->
+  <h1>Congratulations</h1>
+  This is your new Page: autoupdate
+  <!-- End Default Content REMOVE THIS -->
+</apex:form>
+</apex:page>

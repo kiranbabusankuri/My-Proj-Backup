@@ -1,0 +1,22 @@
+<apex:page >
+    <apex:form >
+        <apex:pageBlock title="Detail" mode="detail">
+            <apex:pageBlockSection columns="1">
+                <apex:inputText /> 
+                <apex:inputtextarea />
+            </apex:pageBlockSection>
+        </apex:pageblock>
+        <apex:pageBlock title="MainDetail" mode="maindetail">
+            <apex:pageBlockSection columns="1">
+                <apex:inputText /> 
+                <apex:inputtextarea />
+            </apex:pageBlockSection>
+        </apex:pageblock>
+        <apex:pageBlock title="Edit" mode="edit">
+            <apex:pageBlockSection columns="1">
+                <apex:inputText /> 
+                <apex:inputtextarea />
+            </apex:pageBlockSection>
+        </apex:pageblock>
+    </apex:form>
+</apex:page>

@@ -1,0 +1,9 @@
+<apex:page standardController="Account" showHeader="true" >
+
+<apex:tabPanel switchType="client" selectedTab="name2" id="AccountTabPanel" tabclass="activetab" inactiveTabClass="inactiveTab">
+<apex:tab label="One" name="Name1" id="tabOne">Content for tab1</apex:tab>
+<apex:tab label="Two" name="Name2" id="tabTwo">Content for tab2</apex:tab>
+<apex:tab label="Three" name="Name3" id="tabThree">Hi Kiran</apex:tab>
+</apex:tabPanel>
+
+</apex:page>
